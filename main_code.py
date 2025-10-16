@@ -28,3 +28,37 @@ def impt_my_csv_file(file):
 
             my_data.append(row_dict)          
     return my_data
+
+
+def first_class_percentage_by_region(file):
+    data = impt_my_csv_file(file)
+
+    total_region = {}
+    total_first_region = {}
+
+
+
+    for row in data:
+        region = row["Region"]
+        ship_mode = row["Ship Mode"]
+
+        if region not in total_region:
+            total_region[region] = 0
+        
+        total_region[region] += 1
+
+        if ship_mode == "First Class":
+            if region not in total_first_region:
+                total_first_region[region] = 0
+            
+            total_first_region[region] +=1
+
+    first_calculation = {}
+    for region in total_region:
+        total = total_region[region]
+        first_class = total_first_region.get(region, 0)
+        percentage = (first_class / total) * 100
+        first_calculation[region] = round(percentage, 2)
+
+    
+    return first_calculation
