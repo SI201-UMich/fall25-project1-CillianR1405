@@ -62,3 +62,28 @@ def first_class_percentage_by_region(file):
 
     
     return first_calculation
+
+
+
+
+def total_profit_region_category(file):
+    data = impt_my_csv_file(file)
+
+    profit_dict = {}
+
+    for row in data:
+        region = row["Region"]
+        category = row["Category"]
+        profit = float(row["Profit"])
+
+        if region not in profit_dict:
+            profit_dict[region] = {}
+
+        if category not in profit_dict[region]:
+            profit_dict[region][category] = 0
+
+        profit_dict[region][category] += profit
+
+    return profit_dict
+
+
