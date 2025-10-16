@@ -1,8 +1,10 @@
 # Cillian Reynolds
 # UMID: 2405 4188
-#
-
+# Worked by myself
 # had to slightly adjust original calculations to ensure that they included 3 columns
+# Used chatgpt to help build my functions as suggested. Used a lot of prompting and repromting to ensure that it was providing me with code i understood.
+# Also i would use it as a base for my function, and then end up editing the funcion, so that its performing the same task, but in a more efficient way.
+# Also used it to generate test cases which would be effective for my written code + effectively test various parts of my functions
 
 
 import kagglehub, os
