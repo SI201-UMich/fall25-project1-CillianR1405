@@ -1,0 +1,25 @@
+Project 1 Results
+
+First Class Percentage by Region:
+  South: 14.44%
+  West: 16.08%
+  Central: 12.87%
+  East: 17.21%
+
+Total Profit by Region and Category:
+  South:
+    Furniture: 6771.21
+    Office Supplies: 19986.39
+    Technology: 19991.83
+  West:
+    Office Supplies: 52609.85
+    Furniture: 11504.95
+    Technology: 44303.65
+  Central:
+    Office Supplies: 8879.98
+    Technology: 33697.43
+    Furniture: -2871.05
+  East:
+    Furniture: 3046.17
+    Office Supplies: 41014.58
+    Technology: 47462.04
